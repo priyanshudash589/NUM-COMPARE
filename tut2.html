@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT OBJECT MODEL TUTORIAL 1</title>
+</head>
+<body>
+    <div class="cse">
+        <input type="text" id="NUM1">
+        <input type="text" id="NUM2">
+        <button onclick="addNum()">TRY OUT</button>
+    </div>
+
+<div id="output">
+
+</div>
+
+    <script>
+        function addNum(){
+            var a = document.getElementById("NUM1").value;
+            var b = document.getElementById("NUM2").value;
+console.log(a);
+console.log(b);
+
+            if(a>b)
+            {
+                document.getElementById("output").innerHTML= "a is greater";
+                console.log("the greater is " +a);
+            }
+            else if (b>a){
+                document.getElementById("output").innerHTML= "b is greater";
+                console.log("the greater is " +b);
+            }
+            else if(a==b)
+            {
+                document.getElementById("output").innerHTML= "a & b are equal or null"; 
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
